@@ -1,3 +1,6 @@
+# secrets.LXKEY就是id_rsa
+# Token是PAT
+
 name: sync-jd_scripts
 
 on:
