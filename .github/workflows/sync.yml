@@ -32,9 +32,9 @@ jobs:
     - name: Push Master
       uses: ad-m/github-push-action@master
       with:
-        directory: master
+        directory: jd_master
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: master
+        branch: jd_master
 
     - name: Clone Main
       run: |
@@ -42,9 +42,9 @@ jobs:
     - name: Push Main
       uses: ad-m/github-push-action@master
       with:
-        directory: main
+        directory: jd_main
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: main
+        branch: jd_main
 
     - name: Delete workflow runs
       uses: Mattraks/delete-workflow-runs@main
