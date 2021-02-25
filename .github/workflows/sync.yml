@@ -11,7 +11,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-18.04
-    if: github.repository == 'RikudouPatrickstar/jd_scripts'
+    if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
     - name: Init Build Dependencies
